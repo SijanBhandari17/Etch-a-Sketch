@@ -1,25 +1,47 @@
 html,body{
     height: 100vh;
-    margin: 10;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 
 }
-.container{
-
-    /* display: flex; */
-    height: 100vh; 
-    outline: 1px solid black;
-    justify-content: space-between;
-
+.header,.default {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 2rem;
 }
-.divArrayOne{
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.container{   
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 600px; 
+    margin : 0 auto 0;
+    padding: 0.5rem;
+}
+.individualContainer{
 
     display: flex;
-    background-color: red;
-    outline: 1px solid black;
+    background-color:white;
     text-align: center;
-    height: 6.25%;
+    flex: 1;
+}
 
+[class^="row"]{
+    flex: 1;
+    outline: 1px solid red;
+    transition: background-color 0.2s;
+   
 }
-.row1{
-    flex-grow: 1;
+[class^="row"]:hover,
+[class^="row"].hover-active {
+    background-color: black;
 }
+
+
