@@ -1,0 +1,25 @@
+html,body{
+    height: 100vh;
+    margin: 10;
+
+}
+.container{
+
+    /* display: flex; */
+    height: 100vh; 
+    outline: 1px solid black;
+    justify-content: space-between;
+
+}
+.divArrayOne{
+
+    display: flex;
+    background-color: red;
+    outline: 1px solid black;
+    text-align: center;
+    height: 6.25%;
+
+}
+.row1{
+    flex-grow: 1;
+}
